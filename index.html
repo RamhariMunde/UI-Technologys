@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style type="text/css">
+      * {
+        margin: 8;
+        padding: 5;
+        
+      }
+      body {
+        font-family: sans-serif;
+        margin-top: 40px;
+
+      }
+      .regform {
+        width: 800px;
+        background-color: (0, 0, 0, 0.6);
+        margin: auto;
+        color: #9f1a1a;
+        padding: 10px 2px 10px 2px;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="regform"><h1>Registeration From</h1>
+    <div class="mane">
+      <from >
+        <div id="name">
+          <h2 class="name">Name</h2>
+          <label class="firstlabel"> first name</label>
+          <input class="firstname" type="rext" name="first_name"placeholder="First Name" /><br />
+          <label class="lastlabel">last name</label>
+          <input class="lastname" type="text" name="last_name"placeholder="Last Name" />
+          
+        </div>
+        <h2 class="name">Company</h2>
+        <input class="company" type="text" name="company" placeholder="Company"/>
+
+        <h2 class="name">Email</h2>
+        <input class="email" type="text" name="email"placeholder="Enter Email" />
+
+        <h2 class="name">phone</h2>
+        <label class="area-code"> Area Code</label>
+        <input class="code" type="text" name="area_code" placeholder="Area Code"/><br />
+        <label class="phone-number"> Phone Number</label>
+        <input class="number" type="text" name="phone" placeholder="Phone Number"/>
+        
+
+        <h2 class="name">Subject</h2>
+        <select class="option" name="subject">
+          <option disabled="disabled" selected="selected">
+            --Choose Option
+          </option>
+          <option>Subject 1</option>
+
+          <option>Subject 2</option>
+
+          <option>Subject 3</option>
+        </select>
+
+        <h2 id="student">Are you beginner ?</h2>
+        <label class="radio">
+          <input class="radio-one" type="radio" checked="checked" name="" />
+
+          <span class="checkmark"></span>
+
+          Yes
+        </label>
+
+        <label class="radio">
+          <input class="radio-two" type="radio" name="" />
+        </label>
+        <button type="submit">Register</button>
+      </from>
+    </div>
+  </div>
+  </body>
+</html>
