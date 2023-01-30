@@ -1,0 +1,55 @@
+MYSQL :
+
+1) Mysql Workbench :- Mysql Workbench provides a graphical tool for working with
+Mysql server and database.(we can run the SQl Command).Storing,
+manipulating , Retrieving Data in Database.
+
+2) 
+
+
+
+## SQL Introduction 
+1. SQL stands for Structured Query Language.
+2. SQL is a standard language for accessing and manipulating database.
+ 
+SQL can execute queries aganist a database
+SQL can retriev data from a database 
+SQL can insert records in a database
+SQL can update records in a database
+SQL can delete records from a database
+SQl can creat new database
+SQl can creat new tables in a database
+
+## Important Question for interview ##
+
+# DBMS :                                        
+
+In DBMS data are Stored as a FILE.
+Normalization is NOT AVALIABLE in DBMS.
+It Allow ONE user at a time. 
+Hierarchal Arrangement of data.
+it Does not Support ACID Property.
+it Does Not support Client Server Architecure.
+
+# RDBMS :
+
+In RDBMS Data are Stored in a TABULAR FORM.
+Normalization is AVALIABLE in RDBMS.
+It Allow MORE than one user at a time.
+Stores Data in the from of Rows and Column.
+It Support ACID Property.
+It support client Server Architecure.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
