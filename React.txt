@@ -1,0 +1,28 @@
+### How to React Optimization Techniques ####
+
+1. React Lazy and Suspense
+-> my this is comes with Bydefault in React Application
+
+import LazyComponent from './LazyComponent';
+import { components } from 'chakra-react-sel
+
+const LazyComponent = React.lazy(() => import)
+
+2.Browser level lazy loading of images( General way )
+-> it is use to adding images General
+<img ="./yourimage" alt="image-description" loading="lazy"/>
+
+3. React Memo ( only when required)
+-> but do not use more memo only when you require. ( beacues to mach use is not good for Optimization)
+
+const MyComponent = React.Memo(props => {
+});
+
+4. stop unecessary re-renders by profiling 
+-> this is menualy 
+
+   use React profiling ( dev tools )
+
+   ////////////////////////////////////////////////////////////////////////////////////////////////
+
+   ## 
