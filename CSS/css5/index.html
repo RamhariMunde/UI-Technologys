@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang=" en">
+    <head>
+        <meta name="viewport"
+        content="width-device-width,initial-scale=1.0">
+        <title> Document</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div>
+                <span id="rangeValue">0</span>
+                <input class="range" type="range" name " " value="0"
+                min="0" max="1000"
+                onchange="rangeSlide(this.value)
+                " onmousemove="rangeSlide(this.value)"></input> 
+
+            </div>
+            <script type="text/javascript">
+                function rangeSlide(value){
+                document.getElementById
+                ('rangeValue').innerHTML = value;
+                }
+            </script>
+        </body>
+</html>
