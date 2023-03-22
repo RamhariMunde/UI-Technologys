@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lag ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Fold</title>
+        <style>
+            .Fold {
+                background: rgb(249, 115, 67);
+                color: rgb(236, 254, 240);
+                position:absolute ;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height: 200px;
+                width: 200px;
+            } 
+            .Fold:after {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 0;
+            }
+            .Fold:hover:after {
+                transition-duration: 1s;
+                border-bottom: 50px solid red;
+                border-right: 50px solid white ;
+            }
+        </style>
+
+    </head>
+    <body>
+        <center>
+            <div class="Fold">
+                <h2>Jay Ganesh.....!</h2>
+            </div>
+        </center>
+       
+    </body>
+</html>
