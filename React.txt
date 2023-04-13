@@ -1,3 +1,80 @@
+What is React ?
+-> React is a JavaScript library for buiding fast
+and interactive user interfaces.
+
+- it is developed by a facebook (2013)
+
+React App Structure:- 
+ App:- 1) Topbar:-
+            A) Logo
+            B) Menus
+            C) Avatar
+
+       2) AdSection :-
+
+       3) Grid :-
+            A) Card:-
+                i) Thumbnail
+                ii) Title
+
+Deffrence between React and Angular ?
+->   React is a library, but Angular is a full-fledged framework.  
+ - The virtual DOM and one-way data binding are used by React. js, 
+ but the real DOM and two-way data binding are used by Angular. 
+ There's also a speed difference (React's is faster) and a difference 
+ in bundle size (React's is smaller) (React works a bit faster).     
+
+A) Key Features of React ?
+
+- React’s key features include the ability to use third-party libraries.
+- Time-Saving
+- Composability and Simplicity
+- Facebook is fully behind you.
+- Improved user experience and lightning-fast speed.
+- More rapid development
+- One-directional data binding provides code stability.
+- Components in React
+
+B) Key Features of Angular ?
+
+- Built-in support for AJAX, HTTP, and Observables are just a few of Angular’s highlights. There is widespread support in the community.
+- In line with current technologies
+- Typescript is time-saving.
+- Coding that is more clear and concise
+- Error-handling support has been improved.
+- Angular CLI allows for seamless updates.
+- Validation and forms
+- Local CSS / shadow DOM
+
+Who is using React ?
+-> Facebook, Prime video , Netflix , Instagram ,Twitter ,etc.
+
+# Single Page Application (SPA) And Multiple Page Application (MPA)
+1) Single Page Application (SPA)
+- A single-page Application is an app that works inside a browser and dose
+ not require page reload during use.
+
+- SPAs are all about serving an outstanding user experience (UX)
+ by trying to imitate a 'natural' environment in the browser -- no page reloads, 
+ no extra wait time. It is just one HTML page that you visit which then loads all
+ other content using JavaScript.
+
+ ex: Gmail, Facebook,Instagram, Trello.
+
+2) Multiple Page Application (MPA)
+- Multi-page Application works in a " traditional" way.
+Every change like, display the data or submit data back to server, sends a request
+to the server to render a new page in the browser.
+
+whenever a user navigates from one page to another, a require is
+sent to server to send a new HTML file for that URL.
+
+the server returns a file and then HTML file is loaded in the browser.
+
+Ex: Dribble, Harvald's official Site.
+
+# Creating our First React Application 
+
 ### How to React Optimization Techniques ####
 
 1. React Lazy and Suspense
@@ -22,7 +99,3 @@ const MyComponent = React.Memo(props => {
 -> this is menualy 
 
    use React profiling ( dev tools )
-
-   ////////////////////////////////////////////////////////////////////////////////////////////////
-
-   ## 
