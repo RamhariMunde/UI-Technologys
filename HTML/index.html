@@ -1,49 +1,42 @@
-// all project is created by only html language 
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>
-		beautiful and simple website using html only 
-	</title>
-</head>
-<body background="1.jpg" link="#000" alink="#017bf5" vlink="#000">
-	<br />
-	<h3 align="center">
-		<font face="Lato" size="6">RAMA</font>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<font face="cinzel" size="4">
-			<a href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="#">VIDEOS</a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="#">PORTFOLIO</a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="#">BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="#">CONTACT US</a>
-		</font>
-	</h3>
-	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-	<h1 align="center">
-		<font face="Lato" color="#017bf5" size="7">
-			BEAUTIFUL AND SIMPLE WEB PAGE
-		</font>
-	</h1>
-	<h3 align="center">
-		<font face="Lato" color="#000" size="5">
-			USING HTML 
-		</font>
-	</h3>
-	<br />
-	<h3 align="center">
-	<a href="#">
-		<font face="Lato" color="#000">GET STARTED</font>
-	</a>&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="https://www.google.co.in/">
-		<font face="Lato" color="#fff">GOOGLE</font>
-	</a>
-	</h3>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Heart Pulsing Animation</title>
+        <style>
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+            }
+            #spin{
+                color: rgb(225, 60, 60);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+            }
+            #spin:after{
+                content: "";
+                animation: spin 2s linear infinite;
+            }
+            @keyframes spin{
+                0%{
+                    content: "Ram";
+                }
+                40%{
+                    content: "Munde";
+                }
+                /* 80%{
+                    content: "IT";
+                }
+                90%{
+                    content: "Student";
+                } */
+            }
+
+        </style>
+    </head>
+    <body>
+        <p>Name: <span id="spin"></span>!</p>
+    </body>
 </html>
