@@ -1,0 +1,57 @@
+### JavaScript ###
+
+What is EcmaScript ?
+-> EcmaScript is Standard of JavaScript
+
+variable = Stirng,int,null,undefind,boolin,
+
+4 Ways to Declare a JavaScript Variable:
+     Using var
+     Using let
+     Using const
+     Using nothing
+
+JavaScript ( var , let, const )
+-> 
+var - var la aapan aata kami use karto karan to darveles change hot
+      var la aata koni use karat nahi .
+
+let - ha yk block scoped variabl aahe ha var veksha changla aahe
+     pan aapan let la redeclare karu shakat nahit
+     // let b = "Ram"
+     // let b = 45  //  throws an error
+///////////////////////////     
+{
+    let b = 'this'
+    console.log(b)
+}
+/////////////////////////////
+
+const - const madhe aapan change karu shacat nahit 
+        const madhe identifire same nasti
+
+    // const ram = "harry"
+    // let ram = 43   // throws an error beacause constant cannot be change
+    // const ram;   // value taklich pahije nahi tar error yato
+    // const ram = 0; // write aahe
+
+///////////////////////////////////////////////////////////
+Primitive Data Types:
+Objects:
+
+ Primitive Data Types: 7 Data Types in JavaScript
+ N- null
+ N- Number
+ S- Symbol
+ S- Stirng
+ B- Boolean
+ B- BigInt
+ U- undefind
+
+//////////////////
+ Non-Primitive Data Types in Javascript :-
+Objects:-
+
+What is use of Objects ?
+-> use of Objects is a creat key values pairs,dicsnary,mapping,
+  price mapping , 
