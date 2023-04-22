@@ -1,3 +1,13 @@
+DBMS :
+- DBMS stands for Database Management System. It is a software system that is designed to manage and organize data stored in a database.
+- The primary goal of a DBMS is to provide a convenient, efficient, and safe way to store, retrieve, and manipulate data.
+  It enables users to interact with the database in a variety of ways, such as querying data, modifying data, and creating reports.
+- A DBMS provides a layer of abstraction between the users and the physical storage of the data, making it easier for users to access and work with the data. 
+  The DBMS also ensures the integrity of the data by enforcing rules and constraints, and it provides security features to protect the data from unauthorized 
+  access or modification.
+- Some of the popular DBMSs include Oracle, MySQL, Microsoft SQL Server, PostgreSQL, and MongoDB. Each DBMS has its own features, advantages, 
+  and disadvantages, and the choice of a DBMS depends on the specific requirements of the application or organization.
+
 MYSQL :
 
 1) Mysql Workbench :- Mysql Workbench provides a graphical tool for working with
