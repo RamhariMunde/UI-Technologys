@@ -1,13 +1,24 @@
-DBMS :
-- DBMS stands for Database Management System. It is a software system that is designed to manage and organize data stored in a database.
-- The primary goal of a DBMS is to provide a convenient, efficient, and safe way to store, retrieve, and manipulate data.
-  It enables users to interact with the database in a variety of ways, such as querying data, modifying data, and creating reports.
-- A DBMS provides a layer of abstraction between the users and the physical storage of the data, making it easier for users to access and work with the data. 
-  The DBMS also ensures the integrity of the data by enforcing rules and constraints, and it provides security features to protect the data from unauthorized 
-  access or modification.
-- Some of the popular DBMSs include Oracle, MySQL, Microsoft SQL Server, PostgreSQL, and MongoDB. Each DBMS has its own features, advantages, 
-  and disadvantages, and the choice of a DBMS depends on the specific requirements of the application or organization.
+DBMS : (Database Management System) is a software system that allows users to create, manage, and manipulate databases. 
+It provides an interface for users to interact with the database, perform queries, insert, update, and delete data, and perform other operations.
+Examples of DBMS include Oracle, Microsoft SQL Server, IBM DB2, PostgreSQL, and SQLite.
 
+RDBMS : (Relational Database Management System) is a type of DBMS that is based on the relational data model. It organizes data in tables with columns and rows, 
+where each column represents a specific data element and each row represents a record. RDBMSs use SQL to manage data in these tables.
+Examples of RDBMSs include MySQL, Oracle, Microsoft SQL Server, PostgreSQL, and IBM DB2.
+
+NoSQL : (Not Only SQL) is a type of database management system that does not use a relational data model. Instead, it uses a variety of non-relational data models, 
+such as document-oriented, key-value, or graph databases. NoSQL databases are designed to handle large volumes of unstructured data,
+which makes them suitable for big data applications. Examples of NoSQL databases include MongoDB, Cassandra, Couchbase, and Amazon DynamoDB.
+
+SQL : (Structured Query Language) is a programming language used to manage relational databases. It is used to create, modify, and query databases.
+SQL commands are used to perform operations such as selecting data, inserting data, updating data, and deleting data.
+Examples of SQL commands include SELECT, INSERT, UPDATE, and DELETE. SQL is supported by most DBMSs, including Oracle, Microsoft SQL Server, 
+MySQL, PostgreSQL, and SQLite.
+
+MySQL : is a relational DBMS that uses SQL as its query language. It is open source software that is widely used for web applications,
+particularly in combination with the PHP scripting language. MySQL is known for its speed, reliability, and ease of use. It is used by popular websites such as Facebook, Twitter, and YouTube.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 MYSQL :
 
 1) Mysql Workbench :- Mysql Workbench provides a graphical tool for working with
@@ -49,17 +60,6 @@ It Allow MORE than one user at a time.
 Stores Data in the from of Rows and Column.
 It Support ACID Property.
 It support client Server Architecure.
-
-
-
-
-
-
-
-
-
-
-
 
 
 
