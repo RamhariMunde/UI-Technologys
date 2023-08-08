@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> CSS Animation Created By Ram </title>
+        <link rel="stylesheet" type="text/css">
+        <title> Circul Combination </title>
+    </head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(108, 126, 120);
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container .ring
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+   border: 2px solid #c13a0a;
+    
+}
+.container .ring:nth-child(3)
+{
+    position:absolute;
+    top: -71px;
+    background-color:#ed9372;
+}
+.container .ring:nth-child(4)
+{
+    position: absolute;
+    bottom:-74px ;
+    background-color: #c13a0a; 
+}
+.container .ring:nth-child(1)
+{
+   background-color: #f7b59d;
+}
+.container .ring:nth-child(2)
+{
+ background-color:#ed6938; 
+}
+
+    </style>
+    <body>
+       
+        <div class="container">
+        <div class="ring"> </div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        </div>
+        
+    </body>
+</html>
