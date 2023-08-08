@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-in">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation-only-css</title>
+    </head>
+<style>
+   body .div{
+    font-size: 15px;
+    color: brown;
+    font-family: Arial;
+    font-weight: bold;
+    height: 300px;
+    width: 300px;
+    border: 2px solid green;
+    border-radius: 50%;
+    background: red;
+    animation-name: an;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+}
+@keyframes an {
+    
+    0%{
+        background: red;
+    }
+    50%{
+        background: green;
+        margin-left: 150px;
+        margin-top: 150px;
+    }
+    100%{
+        background: blue;
+        margin-left: 300px;
+        margin-top: 0px;
+    }
+}
+</style>
+<body>
+    <div class="div">Only CSS*</div>
+</body>
+</html>
