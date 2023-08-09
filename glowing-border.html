@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" >
+    <title>Glowing border</title>
+</head>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.block{
+    position: relative;
+    margin: 10% auto 0;
+    width: 50%;
+    height: 400px;
+    background: linear-gradient(0deg, black,rgb(44, 43, 43));
+
+}
+
+.glow::before, .glow::after{
+    content: ' ';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(50deg,#e6fb04,#ff6600,#00ff66, #00ffff,
+    #ff00ff,#ff0099,#6e0dd0,#ff3300,#099fff);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 20% linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.glow::after{
+    filter: blur(40px);
+    /* opacity: 20%; */
+
+}
+</style>
+<body>
+    <div class="block glow"></div>
+</body>
+</html>
