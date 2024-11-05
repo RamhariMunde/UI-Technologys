@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form align="center">
+        Test Alpha Numeric [4,15] : <input type="text" name="alphaNumeric" pattern="[A-Za-z0-9]{4,15}"> <button>Submit</button><br><br>
+        Validate SBI IFSC Code : <input type="text" name="validateNo" pattern="SBIN000\d{4}"> <button>Submit</button><br><br>
+        Validate MO.Number : <input type="text" name="validatemobile" pattern="\+91\d{10}"> <button>Submit</button><br><br>
+        US Mobile Validate : <input type="text" pattern="\+\(1\)\(\d{3}\)\s\d{3}-\d{4}" name="USmobile"> <button>Submit</button><br><br>
+        Validate User Name : <input type="text" pattern="(?=.*[A-Z])[a-zA-Z0-9]{4,15}" name="name"> <button>Submit</button><br><br>
+        US Mobile Validate : <input type="text" pattern="(?=.*[A-Z])(?=.*[0-9])\w{4,15}" name="usmobile"> <button>Submit</button><br><br>
+        UserName1 Validate : <input type="text" pattern="(?=.*[!@#$%&])[a-zA-Z0-9_!@#$%&]{4,15}" name="usmobile"> <button>Submit</button><br><br>
+        UserName2 Validate : <input type="text" pattern="(?=.*[!@#$%&])[\w\W]{4,15}" name="usmobile"> <button>Submit</button><br><br>
+        UserName3 Validate : <input type="text" pattern="(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&])[\w\W]{4,15}" name="usmobile"> <button>Submit</button><br><br>
+    </form>
+</body>
+</html>

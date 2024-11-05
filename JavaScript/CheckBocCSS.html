@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenar{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 6px;
+        }
+        .terms+span{
+            
+         color: red;   
+        }
+        .terms:checked+span{
+            color: green;
+        }
+        .terms~button{
+            display: none;
+        }
+        .terms:checked~button{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="contenar">
+             Terms of Service
+        </div>
+        <div>
+            <input class="terms" type="checkbox" >
+            <span>I Accept</span><Br><br>
+                <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
