@@ -8,10 +8,10 @@ function incr()
 function decr()
 {
     c--;
-    count.textContent=c;
+    count.textContent= c;
 }
 function reset ()
 {
     c=0;
-    count.textContent=c;
+    count.textContent= c;
 }
