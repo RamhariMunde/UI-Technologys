@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <button class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+    <button class="btn btn-success mt-4" data-bs-toggle="modal" data-bs-target="#details">Details</button>
+    <div class="modal fade" id="login">
+    <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+         <div class="modal-header bg-primary text-white">
+            <h2><span class="bi bi-person-fill"></span>User Login</h2>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+         <div class="modal-body">
+            <form>
+                <dl>
+                    <dt>User Name</dt>
+                    <dd><input type="text" class="form-control"></dd>
+                    <dt>Mobile</dt>
+                    <dd><input type="number" class="form-control"></dd>
+                    <dt>Password</dt>
+                    <dd><input type="password" class="form-control"></dd>
+                </dl>
+            </form>
+         </div>
+         <div class="modal-footer">
+              <button class="btn btn-primary">Login</button>
+              <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+         </div>
+     </div>
+    </div>
+    </div>
+    <div class="modal fade" id="details">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Doctor Shree</h2>
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                 <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <img src="/img4.jpg">
+                        </div>
+                        <div class="col">
+                          <h2 >&#8377; 1000/persion</h2>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

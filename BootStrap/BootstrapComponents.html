@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Components</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        a{
+            text-decoration: none;
+        }
+        div{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <h2>Alerts</h2>
+    <div class="alert alert-danger alert-dismissible">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+     <h1 class="alert-title">Record deleted</h1>
+     <p class="alert-subtitle">Record Successfully deleted from database.</p>
+     <a class="alert-link" href="#">Help</a>
+    </div>
+    <div class="alert alert-success alert-dismissible">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+      <h1>Record Inserted</h1>
+      <p>New record Inserted into database.</p>
+      <button class="btn btn-success" data-bs-dismiss="alert">OK</button>
+    </div>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
