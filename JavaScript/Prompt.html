@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script type="text/javascript">
+           function body1(){
+            folder = prompt("Enter Folder Name");
+            if(folder == ""){
+                alert("Plese enter a folder name - it can't be empty");
+            }
+            else if(folder == null){
+              alert("You canceled...");
+            }
+            else{
+                document.querySelector("p").innerHTML += "Folder Created : "+folder +"<br>";
+            }
+           }
+    </script>
+</head>
+<body>  
+    <button onclick="body1()">Created folder</button>
+    <p></p>
+</body>
+</html>
