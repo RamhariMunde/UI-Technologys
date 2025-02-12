@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isNaN</title>
+    <script>
+        function SubmitClick(){
+        var age = document.getElementById("Age").value;
+        var error = document.getElementById("Error");
+        if(isNaN(age))
+        {
+            error.innerHTML = "Age must be a number";
+        }
+        else{
+            document.write("Your Age : "+ age);
+        }
+        }
+        
+        
+    </script>
+</head>
+<body>
+   <dl>
+    <dt>Your Age</dt>
+    <dd><input type="text" id="Age"></dd>
+    <dd id="Error"></dd>
+   </dl>
+   <button onclick="SubmitClick()">Submit</button>
+</body>
+</html>
