@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Formating</title>
+    <script>
+     function VerifyMobile ()
+     {
+        var mobile = document.getElementById("number").value;
+        var mobileError = document.getElementById("mobileError");
+        if(mobile == "")
+     {
+        mobileError.innerHTML = "Mobile Required".bold().italics().fontcolor('red');
+     }else{
+        mobileError.innerHTML = "Mobile Verified".italics().fontcolor('green');
+     }
+     }
+     function ClickChange()
+     {
+        var username = document.getElementById("txtname").value;
+        document.getElementById("txtname").value = username.toUpperCase();
+     }
+    </script>
+</head>
+<body>
+    <div>
+        <dt>Name</dt>
+        <dd><input type="text" id="txtname" placeholder="Block Latter only" onblur="ClickChange()"></dd>
+        <dt>Mobile Number</dt>
+        <dd><input id="number" type="text" onblur="VerifyMobile()"></dd>
+        <dd id="mobileError"></dd>
+    </div>
+</body>
+</html>
