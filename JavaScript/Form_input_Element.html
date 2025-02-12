@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript">
+        function bookclick() {
+        document.getElementById("lblmovie").innerHTML = document.getElementById("lstmovie").value;
+        document.getElementById("lblcinema").innerHTML = document.getElementById("lstcinema").value;
+        poster = document.getElementById("poster");
+        if(document.getElementById("lstmovie").value=="Jailer"){
+            poster.src = "/img1.jpg";
+        }
+        else{
+            poster.src = "/img2.jpg";
+        }
+        }
+
+           document.getElementById("summary").style.display = "block";
+       document.getElementById("btnbook").style.display = "none";
+    </script>
+</head>
+<body class="container-fluid">
+    <button class="btn btn-primary mt-4" id="btnbook" data-bs-target="#booking" data-bs-toggle="modal">Book Movie</button>
+    <dl class="w-25 row" style="display: none;" id="summary">
+         <h2>Booking Summary</h2>
+         <img width="100%" height="200" id="poster">
+         <dt class="col-3">Movie</dt>
+         <dd class="col-9" id="lblmovie"></dd>
+         <dt class="col-3">Cinema</dt>
+         <dd class="col-9" id="lblcinema"></dd>
+         <button class="btn btn-link" data-bs-target="#booking" data-bs-toggle="modal">Modify Booking</button>
+    </dl>
+    <div class="modal fade" id="booking">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Quick Booking</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between" >
+                        <div>
+                            <select class="form-select" id="lstmovie">
+                                <option>Select Movie</option>
+                                <option>Jailer</option>
+                                <option>Gadar</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="form-select" id="lstcinema">
+                                <option>Select Cinema</option>
+                                <option>GVK Ameerpet</option>
+                                <option>GVK S.R.Nagar</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <button data-bs-dismiss="modal" onclick="bookclick()" class="btn btn-danger">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
