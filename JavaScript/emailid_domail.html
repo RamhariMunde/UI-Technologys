@@ -1,0 +1,6 @@
+<script>
+    var email = prompt("Enter your Email");
+    var id = email.substring(email.indexOf("@"),0);
+    var domain = email.slice(email.indexOf("@")+1);
+    document.write(`Your Id : ${id} <br> Domain : ${domain}`);
+</script>
