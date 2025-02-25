@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript">
+        var Cities = ["Delhi","Hyd"];
+        function LoadCities () {
+            document.getElementById("lstCities").innerHTML="";
+            Cities.map(function(city){
+                var option = document.createElement("option");
+                option.text = city;
+                option.value = city;
+                document.getElementById("lstCities").appendChild(option);
+            })
+            document.getElementById("lblCount").innerHTML = `Total Number of Cities: ${Cities.length}`;
+        }
+        function bodyload(){
+            LoadCities();
+        }
+        function AddClick()
+        {
+            var cityName = document.getElementById("txtCity").value;
+            var cityIndex = Cities.indexOf(cityName);
+            if(cityIndex==-1){
+                Cities.push(cityName);
+                alert(`${cityName} Added Successfully..`);
+                document.getElementById("txtCity").value = "";
+                LoadCities();
+            }else {
+                alert(`${cityName} Exists`);
+            } 
+        }
+        function SortAsc(){
+            Cities.sort();
+            LoadCities();
+        }
+        function SortDsc(){
+            Cities.sort();
+            Cities.reverse();
+            LoadCities();
+        }
+        function RemoveClick(){
+            var selectedCity = document.getElementById("lstCities");
+            var cityIndex = Cities.indexOf(selectedCity);
+            var flag = confirm(`Are you sure want to delete ${selectedCity}`);
+            if(flag==true)
+              {
+               Cities.splice(cityIndex,1);
+               LoadCities();
+            }
+        }
+        function ClearClick(){
+            Cities = [];
+            LoadCities();
+        }
+    </script>
+</head>
+<body class="container-fluid" onload="bodyload()">
+    <h3>Add New City</h3>
+    <div class="input-group w-25"> 
+    <input type="text" id="txtCity" class="form-control" placeholder="New City Name">
+    <button onclick="AddClick()" class="btn btn-primary">Add</button>
+    </div>
+    <div class="mt-3 w-25">
+      <label class="fw-bold form-lable">Cities List</label>
+      <div>
+        <div class="mb-2">
+           <button onclick="SortAsc()" class="bi bi-sort-alpha-down btn btn-success"></button>
+           <button onclick="SortDsc()" class="bi bi-sort-alpha-up btn btn-success"></button>
+        </div>
+        <select class="form-select" id="lstCities" size="3">
+
+        </select>
+        <div class="mt-3">
+           <button onclick="RemoveClick()" class="btn btn-danger"><span class="bi bi-trash-fill"></span>Remove city</button>
+           <button onclick="ClearClick()" class="btn btn-danger"><span class="bi bi-trash"></span>Clear All</button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
