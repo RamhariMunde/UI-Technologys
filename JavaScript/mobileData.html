@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function bodyload(){
+           fetch("/Data.json") 
+           .then(function(response){
+            return response.json();
+           })
+           .then(function(Data){
+               document.getElementById("imgProduct").src = Data.image;
+               document.getElementById("lblTitle").innerHTML = Data.title.fontcolor('blue');
+               document.getElementById("lblRatings").innerHTML = `<span class="bg-success p-1 text-white rounded rounded-4 me-3">${Data.ratings.rate}<span class="bi bi-star-fill"> </span></span>
+               <b> ${Data.ratings.count} ratings & ${Data.ratings.review} reviews </b> `;
+
+               Data.features.map(function(features){
+                var li = document.createElement("li");
+                li.innerHTML = features;
+                document.getElementById("lblFeatures").appendChild(li);
+               });
+
+               document.getElementById("lblPrice").innerHTML = (Data.price).toLocaleString('en-IN',{
+                style: 'currency',
+                currency:'INR'
+               });
+           })
+        }
+    </script>
+</head>
+<body class="container-fluid" onload="bodyload()">
+    <div class="row mt-4">
+        <div class="col-3">
+         <img id="imgProduct" width="350" border="1" height="250">
+        </div>
+        <div class="col-7">
+            <div class="h3" id="lblTitle"></div>
+            <div id="lblRatings" class="mt-3"></div>
+            <ul id="lblFeatures" class="mt-3">
+
+            </ul>
+        </div>
+        <div class="col-2">
+         <div class="h3" id="lblPrice"></div>
+        </div>
+    </div>
+</body>
+</html>
